@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import fastify from './src/index.js';
 
 export default async (req, res) => {
