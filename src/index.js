@@ -1,9 +1,5 @@
 import 'dotenv/config';
 import Fastify from 'fastify';
-import cors from '@fastify/cors';
-import etag from '@fastify/etag';
-import view from '@fastify/view';
-import AutoLoad from '@fastify/autoload';
 import { fileURLToPath } from 'url';
 import { join, dirname } from 'path';
 import ejs from 'ejs';
@@ -27,18 +23,17 @@ fastify.setErrorHandler(async (error, request, reply) => {
   };
 });
 
-fastify.register(cors);
-fastify.register(etag);
-fastify.register(view, {
+fastify.register(import('@fastify/cors'));
+fastify.register(import('@fastify/etag'));
+fastify.register(import('@fastify/view'), {
   engine: {
     ejs,
   },
   root: join(__dirname, 'templates'),
 });
 
-fastify.register(AutoLoad, {
-  dir: join(__dirname, 'routes'),
-  indexPattern: /.*index(\.ts|\.js|\.cjs|\.mjs)$/,
-});
+fastify.register(import('./routes/root.js'));
+fastify.register(import('./routes/gh/user.js'));
+fastify.register(import('./routes/gh/repo.js'));
 
 export default fastify;

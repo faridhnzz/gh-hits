@@ -5,13 +5,22 @@ It only works for GitHub profiles.
 
 ## Example
 
-![](https://gh-hits.vercel.app/view?username=faridhnzz)
+GitHub profiles
+![](https://gh-hits.fayln.com/faridhnzz)
+
+GitHub Repo
+![](https://gh-hits.fayln.com/faridhnzz/gh-hits)
 
 ## Usage
 
-- Create GitHub profile repository.
+- Create GitHub repository.
 - Create a README.md on that repository.
 - Add this code:
-  ```
-  ![](https://gh-hits.vercel.app/view?username=your-github-username)
+
+  ```md
+  $ Github Profiles
+  ![](https://gh-hits.fayln.com/:username)
+
+  $ Github Repo
+  ![](https://gh-hits.fayln.com/:username/:repo)
   ```
