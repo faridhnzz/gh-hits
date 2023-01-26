@@ -1,15 +1,16 @@
 # Github Hits
 
-Simple view counter for your GitHub profile. <br/>
-It only works for GitHub profiles.
+Simple view counter for your GitHub profile and repositories.
 
 ## Example
 
-GitHub profiles
-![](https://gh-hits.fayln.com/faridhnzz)
+- GitHub profiles
 
-GitHub Repo
-![](https://gh-hits.fayln.com/faridhnzz/gh-hits)
+  ![](https://gh-hits.fayln.com/faridhnzz)
+
+- GitHub Repo
+
+  ![](https://gh-hits.fayln.com/faridhnzz/gh-hits)
 
 ## Usage
 
