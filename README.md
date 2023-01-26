@@ -5,7 +5,7 @@ It only works for GitHub profiles.
 
 ## Example
 
-![](https://#link/view?username=faridhnzz)
+![](https://gh-hits.vercel.app/view?username=faridhnzz)
 
 ## Usage
 
@@ -13,5 +13,5 @@ It only works for GitHub profiles.
 - Create a README.md on that repository.
 - Add this code:
   ```
-  ![](https://#link/view?username=your-github-username)
+  ![](https://gh-hits.vercel.app/view?username=your-github-username)
   ```
