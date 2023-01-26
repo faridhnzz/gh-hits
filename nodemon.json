@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "ignore": [".git", "node_modules/**", "log/**", "*.md", "vercel.json"],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
